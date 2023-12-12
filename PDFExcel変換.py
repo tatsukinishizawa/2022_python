@@ -1,3 +1,4 @@
+#ほぼネットに転がってたやつ丸パクリ
 from pdfminer3.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer3.converter import PDFPageAggregator
 from pdfminer3.pdfpage import PDFPage
@@ -13,7 +14,7 @@ device = PDFPageAggregator(resourceManager, laparams=LAParams())
 
 
 
-pdf_file_name = r"C:\Users\saitoh\PycharmProjects\transExcelFromPDF\Yageo殿向け　TS3-6205ZZNC3 TS3-6900ZZNC4.pdf"
+pdf_file_name = r"C:\Users\ttk\PycharmProjects\transExcelFromPDF\##殿向け　型式.pdf"
 with open(pdf_file_name, 'rb') as fp:
     interpreter = PDFPageInterpreter(resourceManager, device)
     for page in PDFPage.get_pages(fp):
